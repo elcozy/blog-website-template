@@ -312,6 +312,10 @@ body {
   .partner .col-md-3:nth-child(5) {
     margin: auto;
   }
+  .description h1:nth-child(1) {
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
 }
 footer {
   width: 100%;
