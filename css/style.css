@@ -288,9 +288,29 @@ body {
     height: 100%;
   }
 }
+.partner .col-md-3:nth-child(1) {
+  padding-left: 0;
+}
 @media (max-width: 580px) {
   .touch {
     padding: 0 40px;
+  }
+  .partner .col-md-3:nth-child(1) {
+    margin-right: auto;
+    padding-left: 0;
+  }
+  .partner .col-md-3:nth-child(2) {
+    margin: auto;
+    padding-right: 0;
+  }
+  .partner .col-md-3:nth-child(3) {
+    margin: auto;
+  }
+  .partner .col-md-3:nth-child(4) {
+    margin: auto;
+  }
+  .partner .col-md-3:nth-child(5) {
+    margin: auto;
   }
 }
 footer {
