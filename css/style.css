@@ -82,7 +82,8 @@ body {
   font-size: 24px;
   line-height: 1.5;
 }
-.description button {
+.description button,
+.contactM button {
   border: 1px solid #f2c94c;
   background: #f2c94c;
   border-radius: 0;
@@ -90,7 +91,8 @@ body {
   float: left;
 }
 .description button:hover,
-.resumeView button:hover {
+.resumeView button:hover,
+.contactM button:hover {
   border: 1px solid #fff;
   background: #f2c94c;
   filter: brightness(95%);
@@ -110,7 +112,8 @@ body {
 .description2 h1,
 .resumeView h1,
 .servicesC h1,
-.clientReview h1 {
+.clientReview h1,
+.contactMe h1 {
   text-align: left;
   font-size: 36px;
   font-weight: bold;
@@ -146,15 +149,19 @@ body {
 .servicesC p,
 .servicesC h1,
 .clientReview h1,
-.clientReview p {
+.clientReview p,
+.contactMe h1 {
   text-align: center;
 }
-.servicesList h1 {
+.servicesList h1,
+.reachContacts h5 {
   font-weight: bold;
   font-size: 16px;
   text-align: center;
 }
-.servicesList p {
+
+.servicesList p,
+.reachContacts p {
   font-size: 16px;
   text-align: center;
   line-height: 24px;
@@ -240,8 +247,13 @@ body {
   border-top: #6c757d solid 5px;
   border-width: 90%;
 }
-.partners {
+.partners,
+.contactMe {
   background: #ffffff;
+}
+.reachContacts h5,
+.reachContacts p {
+  text-align: left;
 }
 @media (max-width: 768px) {
   .partner .col-4:nth-child(4) {
@@ -271,20 +283,35 @@ body {
   }
   .servicesImages img {
     cursor: pointer;
-    width: 350px;
-    height: 280px;
+    width: 100%;
+    height: 100%;
   }
 }
 
 footer {
-  width: 101%;
-  height: 94px;
+  width: 100%;
   background: #000000;
   bottom: 0;
   color: #ffffff;
+  padding-bottom: 17px;
 }
 .fa {
   color: #ffffff;
+  cursor: pointer;
+  outline: none;
+}
+.fa-twitter:hover,
+.fa-skype:hover {
+  color: #00aff0;
+}
+.fa-youtube-square:hover {
+  color: #f80000;
+}
+.fa-snapchat-ghost:hover {
+  color: #fbff0c;
+}
+.fa-facebook-official:hover {
+  color: rgb(64, 100, 173);
 }
 .fa::before {
   padding-left: 0.7rem;
@@ -302,4 +329,17 @@ footer {
     padding-right: 0;
     padding-left: 0;
   }
+}
+
+.form-control {
+  border: 0;
+  border-bottom: 1px solid;
+  border-radius: 0;
+}
+input.form-control.pt-4.pb-5.mb-2 {
+  padding-bottom: 90px !important;
+}
+.contactMe {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
